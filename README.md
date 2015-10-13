@@ -30,7 +30,7 @@ PREPARE:
 USAGE:
 ----
 
-  Quick sample code: [readme-example.js](examples/readme-example.js#readme)
+  Quick sample code: [executors-readme-example.js](examples/executors-readme-example.js#readme)
 
 ```bash
 $ node executors-readme-example.js

@@ -1,0 +1,26 @@
+{
+  "name": "executors",
+  "version": "0.0.0",
+  "description": "concurrent executors",
+  "main": "executors.js",
+  "dependencies": {
+    "aa": ">=0.1.18"
+  },
+  "keywords": [
+    "concurrent",
+    "executors"
+  ],
+  "author": "LightSpeedC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "LightSpeedWorks/executors"
+  },
+  "bugs": {
+    "url": "https://github.com/LightSpeedWorks/executors/issues"
+  },
+  "homepage": "https://github.com/LightSpeedWorks/executors#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

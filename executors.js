@@ -1,16 +1,19 @@
 (function (global) {
 	'use strict';
 
-	var aa = require('aa'), chan = aa.chan;
+	var aa = require('aa'), Channel = aa.Channel;
 
 	var slice = [].slice;
 
 	// Executors
 	function Executors(n) {
-		n = n || 1;
-		if (n < 1) n = 1;
+		if (arguments.length === 0) n = 1;
+		if (typeof n !== 'number')
+			throw new TypeError('maximum threads must be a number');
+		if (n < 1 || n !== n)
+			throw new TypeError('maximum threads must be a positive finite number');
 
-		var executorChannel = chan();
+		var executorChannel = Channel();
 
 		var allExecutors = aa(startExecutors);
 		executor.end = closeExecutors;
@@ -45,7 +48,7 @@
 
 		// executor
 		function* executor(fn) {
-			var result = chan();
+			var result = Channel();
 			executorChannel({fn:fn, ctx:this, args:slice.call(arguments, 1), result:result});
 			return yield result;
 		}

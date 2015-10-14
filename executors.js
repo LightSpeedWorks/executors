@@ -57,9 +57,7 @@
 
 	if (typeof module === 'object' && module && module.exports)
 		module.exports = Executors;
-	else {
-		global.executors = Executors;
-		global.Executors = Executors;
-	}
+	else
+		global.executors = global.Executors = Executors;
 
 })(Function('return this')());

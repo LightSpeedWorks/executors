@@ -34,8 +34,6 @@ USAGE:
 
 ```bash
 $ node executors-readme-example.js
-  or
-$ iojs executors-readme-example.js
 ```
 
 ```js

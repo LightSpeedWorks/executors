@@ -1,10 +1,10 @@
 {
   "name": "executors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Java's concurrent executors for JavaScript.",
   "main": "executors.js",
   "dependencies": {
-    "aa": "^0.1.36"
+    "aa": ">=0.1.37"
   },
   "keywords": [
     "concurrent",

@@ -1,6 +1,6 @@
 {
   "name": "executors",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Java's concurrent executors for JavaScript.",
   "main": "executors.js",
   "dependencies": {
